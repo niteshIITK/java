@@ -1,0 +1,24 @@
+Connect all the systems you want to connect for chatting on same network (LAN)
+then - 
+step1 : On the system you want to make as SERVER
+	1. compile 'UserThread.java'
+	2. compile 'ChatServer.java'
+	3. run 'ChatServer' as - 
+		 java ChatServer 8989 
+	where 8989 is just a random port number which you can specify.
+Step2 : On the systems you want to make as ClIENT
+	1. compile 'ReadThread.java'
+	2. compile 'WriteThread.java'
+	3. compile 'ChatClient.java'
+	4. run 'ChatClient' as -
+		java ChatClient hostname/IP_address 8989
+	need to provide the IP_Address and port no of the server 
+
+Using Step 2 we can connect as many users to the chatt.
+
+[Test shapshots are shared in test folder]
+
+Concepts used - 
+Threading 
+Multi - Threading 
+Socket Programming 
